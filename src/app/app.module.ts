@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { LayoutModule } from './layout/layout.module';
+import { SelectivePreloadingStrategy } from './selective-preloading-strategy.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { LayoutModule } from './layout/layout.module';
     LoginModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [SelectivePreloadingStrategy],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

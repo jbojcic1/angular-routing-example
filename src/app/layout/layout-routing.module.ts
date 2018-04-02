@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
-import { FeatureAModule } from '../feature-a/feature-a.module';
-import { FeatureBModule } from '../feature-b/feature-b.module';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'featureA', loadChildren: () => FeatureAModule },
-      { path: 'featureB', loadChildren: () => FeatureBModule }
+      { path: 'featureA', loadChildren: 'app/feature-a/feature-a.module#FeatureAModule', data: { preload: true } },
+      { path: 'featureB', loadChildren: 'app/feature-b/feature-b.module#FeatureBModule', data: { preload: true } }
     ]
   }
 ];
