@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'homible-four',
+  selector: 'routing-test-four',
   templateUrl: './four.component.html',
   styleUrls: ['./four.component.sass']
 })

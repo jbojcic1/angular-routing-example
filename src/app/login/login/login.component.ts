@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'homible-login',
+  selector: 'routing-test-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.sass']
 })

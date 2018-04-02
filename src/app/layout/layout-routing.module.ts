@@ -4,7 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { FeatureAModule } from '../feature-a/feature-a.module';
 import { FeatureBModule } from '../feature-b/feature-b.module';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,

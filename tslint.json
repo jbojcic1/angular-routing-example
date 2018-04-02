@@ -98,8 +98,8 @@
       "check-type"
     ],
 
-    "directive-selector": [true, "attribute", "homible", "camelCase"],
-    "component-selector": [true, "element", "homible", "kebab-case"],
+    "directive-selector": [true, "attribute", "routing-test", "camelCase"],
+    "component-selector": [true, "element", "routing-test", "kebab-case"],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,

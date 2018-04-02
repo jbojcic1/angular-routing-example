@@ -1,14 +1,14 @@
-import { HomibleWebPage } from './app.po';
+import { RoutingTestWebPage } from './app.po';
 
-describe('homible-web App', () => {
-  let page: HomibleWebPage;
+describe('routing-test-web App', () => {
+  let page: RoutingTestWebPage;
 
   beforeEach(() => {
-    page = new HomibleWebPage();
+    page = new RoutingTestWebPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('homible works!');
+    expect(page.getParagraphText()).toEqual('routing-test works!');
   });
 });
