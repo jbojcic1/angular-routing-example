@@ -12,4 +12,8 @@ import { TwoComponent } from './two/two.component';
   ],
   declarations: [OneComponent, TwoComponent]
 })
-export class FeatureAModule { }
+export class FeatureAModule {
+  constructor() {
+    debugger;
+  }
+}

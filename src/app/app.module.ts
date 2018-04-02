@@ -5,24 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FeatureAModule} from './feature-a/feature-a.module';
-import {FeatureBModule} from './feature-b/feature-b.module';
-import { LayoutComponent } from './layout/layout.component';
-import {LoginModule} from "./login/login.module";
+import {LoginModule} from './login/login.module';
+import {LayoutModule} from './layout/layout.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LayoutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    FeatureAModule,
-    FeatureBModule,
-    LoginModule
+    LoginModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
