@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {RouterModule} from '@angular/router';
+import {PreloadAllModules, RouterModule} from '@angular/router';
 import {LayoutModule} from './layout/layout.module';
 
 @NgModule({
@@ -12,6 +12,7 @@ import {LayoutModule} from './layout/layout.module';
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
+    // RouterModule.forRoot([], { preloadingStrategy: PreloadAllModules }),
     LayoutModule,
   ],
   providers: [],
