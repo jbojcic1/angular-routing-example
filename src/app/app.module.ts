@@ -2,21 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {RouterModule, Routes} from '@angular/router';
-import {LoginModule} from './login/login.module';
-import {DashboardModule} from './dashboard/dashboard.module';
-import {RegistrationModule} from './registration/registration.module';
+import {RouterModule} from '@angular/router';
 import {LayoutModule} from './layout/layout.module';
-import {UsersModule} from './users/users.module';
-import {AccountSettingsModule} from './account-settings/account-settings.module';
-
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full'
-  }
-];
 
 @NgModule({
   declarations: [
@@ -24,13 +11,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot([]),
     LayoutModule,
-    LoginModule,
-    DashboardModule,
-    RegistrationModule,
-    UsersModule,
-    AccountSettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
