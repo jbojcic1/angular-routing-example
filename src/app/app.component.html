@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<app-header *ngIf="showHeader" fxLayout="column"></app-header>
+
+<div fxLayout="row" fxFlex="100">
+  <app-sidebar *ngIf="showSidebar" fxLayout="column" fxFlex="300px"></app-sidebar>
+  <div class="content" fxLayout="column" fxFlex>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<app-footer *ngIf="showFooter" fxLayout="column"></app-footer>
+
